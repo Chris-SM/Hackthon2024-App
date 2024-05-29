@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="Login.js"></script>
+<link rel="stylesheet" href="Login.css">
+<title>Formulário de Login</title>
+</head>
+<body onload="Wry()">
+    <div id="CentCar">
+      <img src="Fotos/AppLogo.jpg" style="border: solid 3px; border-radius: 40px;margin-bottom: 1vh;width: 150px;">
+      <img src="Fotos/CarIco.gif" style="width: 150px;">
+</div>
+<div id="CardLog" style="visibility: hidden;">
+<form  onsubmit="return validateForm()" action="PesquisaLocal.html">
+    <center>
+    <h2 style="text-decoration: overline underline;">LOGIN</h2></center>
+    <label for="username">Nome de Usuário:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+    <span id="password_error" class="error"></span>
+    <input type="submit" value="Login">
+</form>
+<a href="cadastro.html"><button id="Cad">Criar Conta</button></a>
+</div>
+</body>
+</html>

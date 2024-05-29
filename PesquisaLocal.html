@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <link rel="stylesheet" href="PesqLoc.css">
+    <script src="PesqLoc.js"></script>
+</head>
+<body>
+    <div id="Guia" style="position: fixed; height: 100%; font-size: 50px;">
+        <a id="Xis" onclick="closeNav()">&times;</a>
+        <hr id="LinhaM">
+        <a href="PesquisaLocal.html" id="Menu">Inicio</a>
+        <a href="Trabal.html" id="Menu">Trabalho</a>
+        <a href="Config.html" id="Menu">Configurações</a>
+      </div>
+    <header>
+        <h1 style="text-align: center;">
+            <span onclick="AbGui()">
+        &#9776;</span>Localização</h1>
+    </header>
+ 
+    <div class="search-container">
+        <input type="text" class="search-box" id="search-input" placeholder="O que você está procurando?" onkeypress="handleKeyPress(event)">
+        <button class="search-button" onclick="search()">Pesquisar</button>
+    </div>
+ 
+    <div class="results" id="results">
+        <h2>Localização Fixa: Etec Adolpho Berezin</h2>
+        <p id="search-result"></p>
+    </div>
+    <div id="map"><iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.openstreetmap.org/export/embed.html?bbox=-46.67883389618198,-24.121943549999997,-46.67883389618198,-24.121943549999997&amp;layer=mapnik" allowfullscreen=""></iframe></div>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Cadastro</title>
+<script src="Cadastro.js"></script>
+<link rel="stylesheet" href="Cadastro.css">
+</head>
+<body>
+<div id="Cardzin">
+<form onsubmit="return validateForm()" action="PesquisaLocal.html">
+    <center>
+    <h2 style="text-decoration: overline underline;">CADASTRO</h2>
+    </center>
+    <label for="username">Nome de Usuário:</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password">
+
+    <label for="confirm_password">Confirme a Senha:</label>
+    <input type="password" id="confirm_password" name="confirm_password">
+    
+    <span id="password_error" class="error"></span>
+
+    <input type="submit" value="Cadastrar">
+</form>
+<a href="Index.html"><button id="ButLogin">Login</button></a>
+</div>
+</body>
+</html>
